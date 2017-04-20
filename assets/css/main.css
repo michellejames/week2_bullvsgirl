@@ -14,6 +14,7 @@ TABLE OF CONTENTS:
 }
 
 body {
+  background-color: #ccc;
 }
 
 @media screen and (min-width: 320px) {
@@ -34,6 +35,7 @@ body {
   font-size: .8em;
   padding: 10px 30px;
   border: 2px solid #fff;
+  border-radius: 20px;
 }
 
 .nav button:hover {
@@ -81,10 +83,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.bull-container {
-  display: flex;
 }
 
 .bull-img {
