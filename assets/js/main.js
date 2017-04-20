@@ -6,6 +6,7 @@ $(function () {
 	$(".bullvsgirl").hide().fadeIn("slow");
 
 	$("#bull-button").on('click toggle', function () {
+		$(this).empty().html("Back");
 		$(".bullvsgirl, h1, .girl").hide();
 		$(".bull").show();
 	});

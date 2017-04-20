@@ -52,11 +52,11 @@ body {
   content: "Find out more";
 }
 
-.nav button:focus {
+.nav button:focus,
+.focus {
   background-color: black;
   color: white;
   box-shadow: inset 0 0 0 3px white;
-
 }
 
 .main h1 {
