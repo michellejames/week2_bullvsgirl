@@ -15,30 +15,6 @@ TABLE OF CONTENTS:
 * {
   box-sizing: border-box; }
 
-body {
-  background: #ccc; }
-
-/* 
-==============================================
-CONTENT:	Project Name Here
-AUTHOR:		Your Name Here
-==============================================
-TABLE OF CONTENTS:
-1. Main Layout
-2. Content
-==============================================
-*/
-/* 1. Main Layout ================================= */
-* {
-  box-sizing: border-box; }
-
-body {
-  background-color: #ccc; }
-
-  .nav {
-    z-index: 10;
-  }
-
 .nav {
   position: absolute;
   display: flex;
@@ -48,8 +24,7 @@ body {
   height: 70px;
   margin-top: 20px; }
 
-.nav button,
-.hidden-nav button {
+.nav button {
   background-color: transparent;
   color: #fff;
   font-size: .8em;
@@ -69,15 +44,10 @@ body {
 .nav button:hover:before {
   content: "Find out more"; }
 
-.nav button:focus,
-.focus {
+.nav button:focus {
   background-color: black;
   color: white;
   box-shadow: inset 0 0 0 3px white; }
-
-#back-button {
-
-}
 
 .main h1 {
   position: absolute;
@@ -94,54 +64,93 @@ body {
   width: 100%;
   height: 100vh; }
 
-.bull,
+.bull {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #BF0500; }
+  .bull .bull-img {
+    background-image: url(../img/bull-img.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    width: 80%;
+    height: 400px;
+    margin-top: 100px; }
+  .bull .bull-name {
+    margin-top: 30px;
+    font-size: 2em;
+    font-family: 'Droid Sans', sans-serif; }
+  .bull .bull p {
+    margin: 20px 20px;
+    font-family: 'Cabin', sans-serif;
+    line-height: 30px; }
+
 .girl {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  background: lightblue; }
+  .girl .girl-img {
+    background-image: url(../img/girl-img.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    width: 80%;
+    height: 400px;
+    margin-top: 100px; }
+  .girl .girl-name {
+    margin-top: 30px;
+    font-size: 2em;
+    font-family: 'Droid Sans', sans-serif; }
+  .girl .girl p {
+    margin: 20px;
+    font-family: 'Cabin', sans-serif;
+    line-height: 30px; }
 
-.bull-img {
-  background-image: url(../img/bull-img.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top;
-  width: 80%;
-  height: 400px;
-  margin-top: 100px; }
-
-.girl-img {
-  background-image: url(../img/girl-img.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 80%;
-  height: 400px;
-  margin-top: 100px; }
-
-.bull-name,
-.girl-name {
-  margin-top: 30px;
-  font-size: 2em;
-  font-family: 'Droid Sans', sans-serif; }
-
-.bull p,
-.girl p {
-  margin: 20px 20%;
-  font-family: 'Cabin', sans-serif;
-  line-height: 30px; }
+.content-module, .content-module .fun-fact1, .content-module .fun-fact2, .content-module .fun-fact3, .content-module .fun-fact4 {
+  width: 60%;
+  height: 200px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  margin: 10px; }
+  .content-module .fun-fact {
+    border: 2px solid black; }
+  .content-module .fun-fact1 {
+    background: #7F3818; }
+  .content-module .fun-fact2 {
+    background: #BF5324; }
+  .content-module .fun-fact3 {
+    background: #E5642B; }
+  .content-module .fun-fact4 {
+    background: #FF6F30; }
 
 @media screen and (min-width: 480px) {
-  .main h1 {
-    font-size: 1.5em; }
-  .nav button {
-    font-size: 1.2em; } }
-
-@media screen and (min-width: 768px) {
+  .bullvsgirl {
+    height: 40%; }
   .main h1 {
     font-size: 2em; }
   .nav button {
-    font-size: 1.7em; } }
+    font-size: 1.7em; }
+  .content-module, .content-module .fun-fact1, .content-module .fun-fact2, .content-module .fun-fact3, .content-module .fun-fact4 {
+    display: flex;
+    flex-direction: column; } }
 
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 768px) {
+  .bullvsgirl {
+    height: 60%; } }
+
+@media screen and (min-width: 850px) {
+  .bullvsgirl {
+    height: 80%; } }
+
+@media screen and (min-width: 1000px) {
+  .bullvsgirl {
+    height: 100%; }
   .main h1 {
     font-size: 2.5em; }
   .nav button {

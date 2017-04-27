@@ -5,8 +5,8 @@ $(function () {
 	// $(".bullvsgirl").hide().fadeIn("slow");
 
 	$("#bull-button").on('click', function () {
-		$(".main, .girl, #bull-button").hide();
-		$(".bull, #back-button").show();
+		$(".main, .girl").hide();
+		$(".bull").show();
 	});
 
 	$("#girl-button").on('click', function () {
@@ -14,8 +14,8 @@ $(function () {
 		$(".girl").show();
 	});
 
-	$("#back-button").on("click", function () {
-		$(".girl, .bull").hide();
-		$(".main, #bull-button").show();
-	});
+	// $("#back-button").on("click", function () {
+	// 	$(".girl, .bull").hide();
+	// 	$(".main, #bull-button").show();
+	// });
 });
