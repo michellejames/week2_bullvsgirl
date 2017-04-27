@@ -1,19 +1,21 @@
 console.log("Hello World from main.js!");
 
 $(function () {
-	$(".bull").hide();
-	$(".girl").hide();
-	$(".bullvsgirl").hide().fadeIn("slow");
+	$(".bull, .girl, #back-button").hide();
+	// $(".bullvsgirl").hide().fadeIn("slow");
 
-	$("#bull-button").on('click toggle', function () {
-		$(this).empty().html("Back");
-		$(".bullvsgirl, h1, .girl").hide();
-		$(".bull").show();
+	$("#bull-button").on('click', function () {
+		$(".main, .girl, #bull-button").hide();
+		$(".bull, #back-button").show();
 	});
 
 	$("#girl-button").on('click', function () {
-		$(this).empty().html("Back");
-		$(".bullvsgirl, h1, .bull").hide();
+		$(".main, .bull").hide();
 		$(".girl").show();
+	});
+
+	$("#back-button").on("click", function () {
+		$(".girl, .bull").hide();
+		$(".main, #bull-button").show();
 	});
 });
